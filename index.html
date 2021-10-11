@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://place1234.github.io/index.html">
+<meta property="og:url" content="https://place1234.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -62,7 +62,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://place1234.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://place1234.github.io"></form>
       </div>
     </div>
   </div>
@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/10/11/hello/">hello</a>
+      <a class="p-name article-title" href="/2021/10/11/hello/">write_up-国庆前一段时间</a>
     </h1>
   
 
@@ -93,11 +93,35 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="1-后门查杀："><a href="#1-后门查杀：" class="headerlink" title="1.    后门查杀："></a>1.    后门查杀：</h1><h2 id="附件是一个站的源码，其中应该是包含了攻击者上传的webshell代码，但是代码量巨大，投机取巧放到杀软里面扫一遍就能看到webshell的位置了，需要的密码就在webshell代码之中，使用记事本自带的查找功能搜索关键字pass就能找到："><a href="#附件是一个站的源码，其中应该是包含了攻击者上传的webshell代码，但是代码量巨大，投机取巧放到杀软里面扫一遍就能看到webshell的位置了，需要的密码就在webshell代码之中，使用记事本自带的查找功能搜索关键字pass就能找到：" class="headerlink" title="附件是一个站的源码，其中应该是包含了攻击者上传的webshell代码，但是代码量巨大，投机取巧放到杀软里面扫一遍就能看到webshell的位置了，需要的密码就在webshell代码之中，使用记事本自带的查找功能搜索关键字pass就能找到："></a>附件是一个站的源码，其中应该是包含了攻击者上传的webshell代码，但是代码量巨大，投机取巧放到杀软里面扫一遍就能看到webshell的位置了，需要的密码就在webshell代码之中，使用记事本自带的查找功能搜索关键字pass就能找到：</h2><p><img src="%E5%90%8E%E9%97%A8%E6%9F%A5%E6%9D%80%E6%88%AA%E5%9B%BE1.png" alt="p1"></p>
+<h1 id="2-webshell后门："><a href="#2-webshell后门：" class="headerlink" title="2.    webshell后门："></a>2.    webshell后门：</h1><h2 id="这一题和上一题思路是一样的，杀软扫描一遍后就得到shell路径"><a href="#这一题和上一题思路是一样的，杀软扫描一遍后就得到shell路径" class="headerlink" title="这一题和上一题思路是一样的，杀软扫描一遍后就得到shell路径"></a>这一题和上一题思路是一样的，杀软扫描一遍后就得到shell路径</h2><p><img src="p2.png" alt="p2"></p>
+<h1 id="3-假如给我三天光明："><a href="#3-假如给我三天光明：" class="headerlink" title="3.    假如给我三天光明："></a>3.    假如给我三天光明：</h1><p><img src="p3.png" alt="p3"></p>
+<h2 id="附件中包含一张图片和一个压缩包，图片内容提示了盲文信息，是压缩包的解压密码，直接用7zip打开压缩包后使用密码解压得到一个音频文件，放入音轨查看工具中可以发现是摩斯电码音频，使用工具解密得到flag："><a href="#附件中包含一张图片和一个压缩包，图片内容提示了盲文信息，是压缩包的解压密码，直接用7zip打开压缩包后使用密码解压得到一个音频文件，放入音轨查看工具中可以发现是摩斯电码音频，使用工具解密得到flag：" class="headerlink" title="附件中包含一张图片和一个压缩包，图片内容提示了盲文信息，是压缩包的解压密码，直接用7zip打开压缩包后使用密码解压得到一个音频文件，放入音轨查看工具中可以发现是摩斯电码音频，使用工具解密得到flag："></a>附件中包含一张图片和一个压缩包，图片内容提示了盲文信息，是压缩包的解压密码，直接用7zip打开压缩包后使用密码解压得到一个音频文件，放入音轨查看工具中可以发现是摩斯电码音频，使用工具解密得到flag：</h2><p><img src="p4.png" alt="p4"></p>
+<h2 id="转化成小写之后就是可以提交的flag了"><a href="#转化成小写之后就是可以提交的flag了" class="headerlink" title="转化成小写之后就是可以提交的flag了"></a>转化成小写之后就是可以提交的flag了</h2><h1 id="4-ceasar："><a href="#4-ceasar：" class="headerlink" title="4.    ceasar："></a>4.    ceasar：</h1><p><img src="p5.png">  </p>
+<h2 id="凯撒加密，但是不知道位移数，暴力列举："><a href="#凯撒加密，但是不知道位移数，暴力列举：" class="headerlink" title="凯撒加密，但是不知道位移数，暴力列举："></a>凯撒加密，但是不知道位移数，暴力列举：</h2><p><img src="p6.png"></p>
+<h1 id="5-间谍启示录："><a href="#5-间谍启示录：" class="headerlink" title="5.    间谍启示录："></a>5.    间谍启示录：</h1><h2 id="奇奇怪怪的题，挂载磁盘后运行exe文件，命令窗口一闪而过，没有留下甚么好东西，"><a href="#奇奇怪怪的题，挂载磁盘后运行exe文件，命令窗口一闪而过，没有留下甚么好东西，" class="headerlink" title="奇奇怪怪的题，挂载磁盘后运行exe文件，命令窗口一闪而过，没有留下甚么好东西，"></a>奇奇怪怪的题，挂载磁盘后运行exe文件，命令窗口一闪而过，没有留下甚么好东西，</h2><p><img src="p7.png"></p>
+<h2 id="试试用7zip打开该文件"><a href="#试试用7zip打开该文件" class="headerlink" title="试试用7zip打开该文件"></a>试试用7zip打开该文件</h2><p><img src="p8.png"></p>
+<h2 id="解压后得到flag-exe文件，运行后得到flag"><a href="#解压后得到flag-exe文件，运行后得到flag" class="headerlink" title="解压后得到flag.exe文件，运行后得到flag"></a>解压后得到flag.exe文件，运行后得到flag</h2><p><img src="p9.png"></p>
+<h1 id="6-followme："><a href="#6-followme：" class="headerlink" title="6.    followme："></a>6.    followme：</h1><h2 id="流量分析："><a href="#流量分析：" class="headerlink" title="流量分析："></a>流量分析：</h2><p><img src="p10.png"> </p>
+<h1 id="7-你有没有好好看网课："><a href="#7-你有没有好好看网课：" class="headerlink" title="7.    你有没有好好看网课："></a>7.    你有没有好好看网课：</h1><h2 id="这一题比较套，先爆破得到flag3的压缩包密码，然后将其中包含的视频逐帧（没有视频逐帧的工具，但是看到了一闪而过的密文，找了大佬的wp，白嫖了一个密码）分析且解密后得到flag2的密码（wllmup-up-up），解压后得到一张图片，放到winhex里面得到flag"><a href="#这一题比较套，先爆破得到flag3的压缩包密码，然后将其中包含的视频逐帧（没有视频逐帧的工具，但是看到了一闪而过的密文，找了大佬的wp，白嫖了一个密码）分析且解密后得到flag2的密码（wllmup-up-up），解压后得到一张图片，放到winhex里面得到flag" class="headerlink" title="这一题比较套，先爆破得到flag3的压缩包密码，然后将其中包含的视频逐帧（没有视频逐帧的工具，但是看到了一闪而过的密文，找了大佬的wp，白嫖了一个密码）分析且解密后得到flag2的密码（wllmup_up_up），解压后得到一张图片，放到winhex里面得到flag"></a>这一题比较套，先爆破得到flag3的压缩包密码，然后将其中包含的视频逐帧（没有视频逐帧的工具，但是看到了一闪而过的密文，找了大佬的wp，白嫖了一个密码）分析且解密后得到flag2的密码（wllmup_up_up），解压后得到一张图片，放到winhex里面得到flag</h2><p><img src="p11.png"></p>
+<h1 id="8-Morse："><a href="#8-Morse：" class="headerlink" title="8.    Morse："></a>8.    Morse：</h1><h2 id="简单题，摩斯密码工具解密得到flag："><a href="#简单题，摩斯密码工具解密得到flag：" class="headerlink" title="简单题，摩斯密码工具解密得到flag："></a>简单题，摩斯密码工具解密得到flag：</h2><p><img src="p12.png"> </p>
+<h1 id="9-佛说：只能四天："><a href="#9-佛说：只能四天：" class="headerlink" title="9.    佛说：只能四天："></a>9.    佛说：只能四天：</h1><h2 id="看见题目名字不由得想起许久未用过的与佛论禅工具了"><a href="#看见题目名字不由得想起许久未用过的与佛论禅工具了" class="headerlink" title="看见题目名字不由得想起许久未用过的与佛论禅工具了"></a>看见题目名字不由得想起许久未用过的与佛论禅工具了</h2><p><img src="p13.png"> </p>
+<h2 id="但是普通的与佛论禅工具无法解决，查看一下附件中的hint文件"><a href="#但是普通的与佛论禅工具无法解决，查看一下附件中的hint文件" class="headerlink" title="但是普通的与佛论禅工具无法解决，查看一下附件中的hint文件"></a>但是普通的与佛论禅工具无法解决，查看一下附件中的hint文件</h2><p><img src="p14.png"> </p>
+<h2 id="应该是新约与佛论禅加密的，打开工具解密一手"><a href="#应该是新约与佛论禅加密的，打开工具解密一手" class="headerlink" title="应该是新约与佛论禅加密的，打开工具解密一手"></a>应该是新约与佛论禅加密的，打开工具解密一手</h2><p><img src="p15.png"> </p>
+<h2 id="核心价值观加密："><a href="#核心价值观加密：" class="headerlink" title="核心价值观加密："></a>核心价值观加密：</h2><p><img src="p16.png"> </p>
+<h2 id="提示使用栅栏解密："><a href="#提示使用栅栏解密：" class="headerlink" title="提示使用栅栏解密："></a>提示使用栅栏解密：</h2><p><img src="p17.png"> </p>
+<h2 id="凯撒解密："><a href="#凯撒解密：" class="headerlink" title="凯撒解密："></a>凯撒解密：</h2><p><img src="p18.png"> </p>
+<h2 id="结果还是不像flag，观察密文形式，因该还要用base32解密一次："><a href="#结果还是不像flag，观察密文形式，因该还要用base32解密一次：" class="headerlink" title="结果还是不像flag，观察密文形式，因该还要用base32解密一次："></a>结果还是不像flag，观察密文形式，因该还要用base32解密一次：</h2><p><img src="p19.png"> </p>
+<h1 id="10-Unencode："><a href="#10-Unencode：" class="headerlink" title="10.    Unencode："></a>10.    Unencode：</h1><p><img src="p20.png"><br><img src="p21.png"></p>
+<h2 id="工具解密："><a href="#工具解密：" class="headerlink" title="工具解密："></a>工具解密：</h2><p><img src="p22.png"> </p>
+<h1 id="11-异性相吸："><a href="#11-异性相吸：" class="headerlink" title="11.    异性相吸："></a>11.    异性相吸：</h1><h2 id="看题猜思路—-gt-异或运算："><a href="#看题猜思路—-gt-异或运算：" class="headerlink" title="看题猜思路—&gt;异或运算："></a>看题猜思路—&gt;异或运算：</h2><h2 id="上脚本："><a href="#上脚本：" class="headerlink" title="上脚本："></a>上脚本：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;key.txt&quot;</span>) <span class="keyword">as</span> f1:</span><br><span class="line">    a1=f1.read()</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;密文.txt&quot;</span>) <span class="keyword">as</span> f2:</span><br><span class="line">    a2=f2.read()</span><br><span class="line">key=<span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a1)):</span><br><span class="line">    key+=<span class="built_in">chr</span>(<span class="built_in">ord</span>(<span class="built_in">list</span>(a1)[i])^<span class="built_in">ord</span>(<span class="built_in">list</span>(a2)[i]))</span><br><span class="line"><span class="built_in">print</span>(key)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="12-NCTF2019-Keyboard："><a href="#12-NCTF2019-Keyboard：" class="headerlink" title="12.    [NCTF2019]Keyboard："></a>12.    [NCTF2019]Keyboard：</h1><h2 id="九键转换，简单题："><a href="#九键转换，简单题：" class="headerlink" title="九键转换，简单题："></a>九键转换，简单题：</h2><p><img src="p23.png"> </p>
+<h2 id="转换后得到youaresosmartthatthisisjustapieceofcake-包上flag-就是flag"><a href="#转换后得到youaresosmartthatthisisjustapieceofcake-包上flag-就是flag" class="headerlink" title="转换后得到youaresosmartthatthisisjustapieceofcake,包上flag{}就是flag"></a>转换后得到youaresosmartthatthisisjustapieceofcake,包上flag{}就是flag</h2><h1 id="13-MRCTF2020-keyboard："><a href="#13-MRCTF2020-keyboard：" class="headerlink" title="13.    [MRCTF2020]keyboard："></a>13.    [MRCTF2020]keyboard：</h1><h2 id="思路同上，但是最后一位的密文有点问题，应该有两个3的"><a href="#思路同上，但是最后一位的密文有点问题，应该有两个3的" class="headerlink" title="思路同上，但是最后一位的密文有点问题，应该有两个3的"></a>思路同上，但是最后一位的密文有点问题，应该有两个3的</h2><p><img src="p24.png"> </p>
+<h2 id="flag-mobilephone"><a href="#flag-mobilephone" class="headerlink" title="flag{mobilephone}"></a>flag{mobilephone}</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://place1234.github.io/2021/10/11/hello/" data-id="ckumofu1z0000mojr7ovw1rdx" data-title="hello" class="article-share-link">Share</a>
+      <a data-url="https://place1234.github.io/2021/10/11/hello/" data-id="ckumofu1z0000mojr7ovw1rdx" data-title="write_up-国庆前一段时间" class="article-share-link">Share</a>
       
       
       
@@ -135,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://place1234.github.io/2021/09/01/hexo/" data-id="ckt0dheda0000kkjr45wf4aou" data-title="hexo" class="article-share-link">Share</a>
+      <a data-url="https://place1234.github.io/2021/09/01/hexo/" data-id="ckt0dheda0000kkjr45wf4aou" data-title="hexo" class="article-share-link">Share</a>
       
       
       
@@ -186,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://place1234.github.io/2021/09/01/hello-world/" data-id="ckt0dhedf0001kkjrhnrz8u9u" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://place1234.github.io/2021/09/01/hello-world/" data-id="ckt0dhedf0001kkjrhnrz8u9u" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -229,7 +253,7 @@
       <ul>
         
           <li>
-            <a href="/2021/10/11/hello/">hello</a>
+            <a href="/2021/10/11/hello/">write_up-国庆前一段时间</a>
           </li>
         
           <li>
